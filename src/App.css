@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quote-display {
+    max-width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.character-box {
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px; /* Increase spacing between characters */
+    cursor: pointer; /* Indicates that the character is clickable */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.selected { /* Highlight for the selected character */
+    background-color: #f0e68c; /* Light yellow, change as needed */
 }
 
-.App-link {
-  color: #61dafb;
+.quote-row {
+    display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hint-row {
+    display: block;
+    font-size: smaller; /* Optional: Adjust font size if needed */
+    white-space: nowrap; /* Keeps multi-digit numbers together */
+}
+
+.keyboard-container {
+    display: flex; /* Ensures keyboard is laid out horizontally */
+    flex-wrap: wrap; /* Wraps content if the screen width is too small */
+    justify-content: center; /* Center-aligns the keyboard */
+    margin-top: 20px;
+}
+
+.keyboard-button {
+    padding: 10px 15px; /* Padding for buttons, adjust as needed */
+    margin: 5px; /* Spacing between buttons */
+    cursor: pointer; /* Indicates that the buttons are clickable */
+    background-color: #4CAF50; /* Button color, change as needed */
+    border: none; /* Removes the border */
+    color: white; /* Text color */
+    text-transform: uppercase; /* Capital letter labels */
+    font-size: 16px; /* Adjust size as needed */
+}
+
+.message {
+    color: #d63031;
+    font-size: 18px;
+    margin-top: 20px;
 }

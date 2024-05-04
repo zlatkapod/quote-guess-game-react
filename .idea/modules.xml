@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hangman-frontend.iml" filepath="$PROJECT_DIR$/.idea/hangman-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/quote-letter-game-react.iml" filepath="$PROJECT_DIR$/.idea/quote-letter-game-react.iml" />
     </modules>
   </component>
 </project>
